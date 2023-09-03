@@ -1,0 +1,12 @@
+pnpm dlx aws-api-gateway-cli-test \
+--user-pool-id='us-east-1_GN50bLT7Q' \
+--app-client-id='40ouq1p6r3biqnhoui48a8h5gi' \
+--cognito-region='us-east-1' \
+--identity-pool-id='us-east-1:6ad5d482-d718-4b45-bcc1-8331955f10a4' \
+--invoke-url='https://m2hgrzxxdf.execute-api.us-east-1.amazonaws.com' \
+--api-gateway-region='us-east-1' \
+--username='jaapmvermeer@gmail.com' \
+--password='Passw0rd!' \
+--path-template='/notes' \
+--method='POST' \
+--body='{"content":"hello secure world","attachment":"hello.jpg"}'
